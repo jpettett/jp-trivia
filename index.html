@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Welcome to Jurassic Park!</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Spectral:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Jurassic Park Trivia</h1>
+    <p class="about">
+      Test your knowledge about the classic 1993 feature film Jurassic Park!
+    </p>
+    <div class="score-board">
+      <h4 class="score-title">SCORE</h4>
+      <h4 class="score">00</h4>
+    </div>
+    <!-- Question 1 -->
+    <div class="question-box">
+      <h3 class="question-one">What actor plays Ian Malcom?</h3>
+      <input type="radio" name="a" value="wrong" />Nicholas Cage<br />
+      <input type="radio" name="a" value="wrong" />Ryan Gosling<br />
+      <input type="radio" name="a" value="correct" />Jeff Goldblum<br />
+      <input type="radio" name="a" value="wrong" />Brian Cranston<br />
+    </div>
+    <button class="submit-button-one">Submit Answer</button>
+    <!-- Question 2 -->
+    <div class="question-box">
+      <h3 class="question-two">Who directed Jurassic Park?</h3>
+      <input class="correct-two" type="radio" name="a" value="correct" />Steven
+      Spielberg<br />
+      <input type="radio" name="a" value="wrong" />Martin Scorsese<br />
+      <input type="radio" name="a" value="wrong" />George Lucas<br />
+      <input type="radio" name="a" value="wrong" />James Cameron<br />
+    </div>
+    <button class="submit-button-two">Submit Answer</button>
+    <!-- Question 3 -->
+    <div class="question-box">
+      <h3 class="question-three">
+        What fictional island is Jurassic Park set on?
+      </h3>
+      <input type="radio" name="a" value="wrong" />Island Park<br />
+      <input class="correct-three" type="radio" name="a" value="correct" />Isla
+      Nubar<br />
+      <input type="radio" name="a" value="wrong" />Costa Isla<br />
+      <input type="radio" name="a" value="wrong" />Dino Island<br />
+    </div>
+    <button class="submit-button-three">Submit Answer</button>
+    <!-- Question 4  -->
+    <div class="question-box">
+      <h3 class="question-three">
+        What stone contains 'dino DNA'?
+      </h3>
+      <input type="radio" name="a" value="wrong" />Quartz<br />
+      <input
+        class="correct-four"
+        type="radio"
+        name="a"
+        value="correct"
+      />Amber<br />
+      <input type="radio" name="a" value="wrong" />Diamonds<br />
+      <input type="radio" name="a" value="wrong" />Opal<br />
+    </div>
+    <button class="submit-button-four">Submit Answer</button>
+    <!-- Question 5   -->
+    <div class="question-box">
+      <h3 class="question-three">
+        What is the name of the lawyer?
+      </h3>
+      <input type="radio" name="a" value="wrong" />Amos McFly<br />
+      <input class="correct-three" type="radio" name="a" value="wrong" />Kirk
+      Geraldo<br />
+      <input type="radio" name="a" value="wrong" />Mr. Howard<br />
+      <input class="correct-five" type="radio" name="a" value="correct" />Donald
+      Gennaro<br />
+    </div>
+    <button class="submit-button-five">Submit Answer</button>
+    <section class="winner">
+      <h1 class="title">WINNER!</h1>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
