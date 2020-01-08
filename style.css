@@ -4,6 +4,7 @@ html {
 }
 
 body {
+  text-align: center;
   background-image: url('needpix_com_edited_image.png');
   background-repeat: no-repeat;
   background-position: top;
@@ -15,7 +16,7 @@ h1 {
   font-size: 60px;
   color: rgb(229, 233, 236);
   border-bottom: 2px solid black;
-  padding-left: 40px;
+  /* padding-left: 40px; */
 }
 
 h3 {
@@ -25,49 +26,115 @@ h3 {
 
 p {
   text-align: center;
-  color: white;
+  /* color: white; */
+  color: black;
   font-size: 20px;
 }
 
-.score-board {
-  padding: 10px 50px 10px 100px;
-  color: white;
-  font-size: 30px;
+.correct-span {
+  display: none;
+}
+.answer:hover {
+  text-decoration: underline;
 }
 
-.score-title {
-  padding-left: 130px;
+.question {
+  font-weight: 600;
+}
+
+.score-board {
+  /* padding: 10px 50px 10px 100px; */
+  float: right;
+  background-color: rgb(33, 88, 88, 0.2);
+  color: white;
+  font-size: 30px;
+  height: 100px;
+  width: 200px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.score-title,
+.time-title {
+  /* padding-left: 130px; */
   margin-bottom: 0;
   margin-top: 10px;
 }
 
-.score {
-  padding-left: 160px;
+.score,
+.time {
+  /* padding-left: 30px; */
   margin-top: 10px;
 }
 
-.question-box {
+.timer {
+  background-color: rgb(33, 88, 88, 0.2);
+  color: white;
+  font-size: 30px;
+  height: 100px;
+  width: 200px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.container {
   border: 2px solid white;
   background-color: rgb(245, 245, 245, 0.7);
   margin-top: 10px;
   border-radius: 5px;
+  height: 400px;
+  width: 600px;
 }
 
-.question-three {
-  padding-right: 50px;
+.container-two,
+.container-three,
+.container-four,
+.container-six,
+.container-seven {
+  border: 2px solid white;
+  background-color: rgb(245, 245, 245, 0.7);
+  margin-top: 10px;
+  border-radius: 5px;
+  height: 400px;
+  width: 600px;
+  display: none;
 }
 
-.submit-button {
+/* container five wouldnt load unless it was separated out.... */
+.container-five {
+  border: 2px solid white;
+  background-color: rgb(245, 245, 245, 0.7);
+  margin-top: 10px;
+  border-radius: 5px;
+  height: 400px;
+  width: 600px;
+  display: none;
+}
+
+.start-button {
+  margin: 45px;
   font-size: 12px;
+  background-color: gray;
+  padding: 16px;
+  transition-duration: 0.4s;
+  border-radius: 3px;
+}
+
+.start-button:hover {
+  background-color: rgb(221, 82, 27);
 }
 
 .winner {
-  position: absolute;
+  background-color: black;
   background-image: url('https://media.giphy.com/media/SnzivCcjEj5mg/giphy.gif');
   background-repeat: no-repeat;
   text-align: center;
-  opacity: 0;
-  /* position: relative; */
+  opacity: 0.5;
+}
+
+.win-screen {
+  color: black;
+  font-size: 75px;
 }
 
 .cheat {
@@ -77,4 +144,11 @@ p {
   text-align: center;
   opacity: 0;
   position: relative;
+}
+
+.reset {
+  background-color: white;
+  padding: 16px;
+  border: white 1px solid;
+  border-radius: 7px;
 }

@@ -13,76 +13,71 @@
   </head>
   <body>
     <h1>Jurassic Park Trivia</h1>
-    <p class="about">
-      Test your knowledge about the classic 1993 feature film Jurassic Park!
-    </p>
+
     <div class="score-board">
-      <h4 class="score-title">SCORE</h4>
+      <h4 class="score-title">SCORE:</h4>
       <h4 class="score">00</h4>
     </div>
-    <!-- Question 1 -->
-    <div class="question-box">
-      <h3 class="question-one">What actor plays Ian Malcom?</h3>
-      <input type="radio" name="a" value="wrong" />Nicholas Cage<br />
-      <input type="radio" name="a" value="wrong" />Ryan Gosling<br />
-      <input type="radio" name="a" value="correct" />Jeff Goldblum<br />
-      <input type="radio" name="a" value="wrong" />Brian Cranston<br />
+    <div class="timer">
+      <h4 class="time-title">TIME:</h4>
+      <h4 class="time">30</h4>
     </div>
-    <button class="submit-button-one">Submit Answer</button>
-    <!-- Question 2 -->
-    <div class="question-box">
-      <h3 class="question-two">Who directed Jurassic Park?</h3>
-      <input class="correct-two" type="radio" name="a" value="correct" />Steven
-      Spielberg<br />
-      <input type="radio" name="a" value="wrong" />Martin Scorsese<br />
-      <input type="radio" name="a" value="wrong" />George Lucas<br />
-      <input type="radio" name="a" value="wrong" />James Cameron<br />
+    <div class="container">
+      <p class="test">Test your Jurassic Park knowledge!</p>
+      <p class="test">
+        Instructions: You'll have 30 seconds to answer 5 questions about the
+        1993 blockbuster movie Jurassic Park
+      </p>
+      <p class="test">
+        Rules: Select the correct answer and click 'Next Question' to move onto
+        the next question. Don't just click the score board to give yourself
+        extra points. Really. Don't.
+      </p>
+      <button class="start-button">Get Started!</button>
     </div>
-    <button class="submit-button-two">Submit Answer</button>
-    <!-- Question 3 -->
-    <div class="question-box">
-      <h3 class="question-three">
-        What fictional island is Jurassic Park set on?
-      </h3>
-      <input type="radio" name="a" value="wrong" />Island Park<br />
-      <input class="correct-three" type="radio" name="a" value="correct" />Isla
-      Nubar<br />
-      <input type="radio" name="a" value="wrong" />Costa Isla<br />
-      <input type="radio" name="a" value="wrong" />Dino Island<br />
+    <div class="container-two">
+      <p class="question">What actor plays Ian Malcom?</p>
+      <p id="correct" class="answer">
+        Jeff Goldblum <span class="correct-span">Correct!</span>
+      </p>
+      <p class="answer">Nicholas Cage</p>
+      <p class="answer">Ryan Gosling</p>
+      <p class="answer">Brian Cranston</p>
     </div>
-    <button class="submit-button-three">Submit Answer</button>
-    <!-- Question 4  -->
-    <div class="question-box">
-      <h3 class="question-three">
-        What stone contains 'dino DNA'?
-      </h3>
-      <input type="radio" name="a" value="wrong" />Quartz<br />
-      <input
-        class="correct-four"
-        type="radio"
-        name="a"
-        value="correct"
-      />Amber<br />
-      <input type="radio" name="a" value="wrong" />Diamonds<br />
-      <input type="radio" name="a" value="wrong" />Opal<br />
+    <div class="container-three">
+      <p class="question">Who directed Jurassic Park?</p>
+      <p id="correct-two" class="answer">Steven Spielberg</p>
+      <p class="answer">Martin Scorsese</p>
+      <p class="answer">George Lucas</p>
+      <p class="answer">James Cameron</p>
     </div>
-    <button class="submit-button-four">Submit Answer</button>
-    <!-- Question 5   -->
-    <div class="question-box">
-      <h3 class="question-three">
-        What is the name of the lawyer?
-      </h3>
-      <input type="radio" name="a" value="wrong" />Amos McFly<br />
-      <input class="correct-three" type="radio" name="a" value="wrong" />Kirk
-      Geraldo<br />
-      <input type="radio" name="a" value="wrong" />Mr. Howard<br />
-      <input class="correct-five" type="radio" name="a" value="correct" />Donald
-      Gennaro<br />
+    <div class="container-four">
+      <p class="question">
+        On what fictional island does Jurassic Park take place?
+      </p>
+      <p class="answer">Island Park</p>
+      <p id="correct-three" class="answer">Isla Nubar</p>
+      <p class="answer">Costa Isla</p>
+      <p class="answer">Dino Island</p>
     </div>
-    <button class="submit-button-five">Submit Answer</button>
-    <section class="winner">
-      <h1 class="title">WINNER!</h1>
-    </section>
+    <div class="container-five">
+      <p class="question">What stone contains 'dino DNA'?</p>
+      <p class="answer">Quartz</p>
+      <p class="answer">Diamonds</p>
+      <p id="correct-four" class="answer">Amber</p>
+      <p class="answer">Opal</p>
+    </div>
+    <div class="container-six">
+      <p class="question">What is the name of John Hammond's lawyer?</p>
+      <p class="answer">Amos McFly</p>
+      <p class="answer">Kirk Geraldo</p>
+      <p class="answer">Mr. Howard</p>
+      <p id="correct-five" class="answer">Donald Gennaro</p>
+    </div>
+    <div class="container-seven">
+      <p class="win-screen">YOU WIN!</p>
+      <button class="reset">Play Again</button>
+    </div>
 
     <script src="script.js"></script>
   </body>
