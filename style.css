@@ -35,6 +35,11 @@ span {
   color: green;
   display: none;
 }
+
+img {
+  border: 2px solid white;
+  margin-top: 2px;
+}
 .answer:hover {
   text-decoration: none;
   cursor: pointer;
@@ -45,7 +50,6 @@ span {
 }
 
 .score-board {
-  /* padding: 10px 50px 10px 100px; */
   float: right;
   background-color: rgb(33, 88, 88, 0.2);
   color: white;
@@ -91,13 +95,22 @@ span {
 .container-two,
 .container-three,
 .container-four,
-.container-six,
-.container-seven {
+.container-six {
   border: 2px solid white;
   background-color: rgb(245, 245, 245, 0.7);
   margin-top: 10px;
   border-radius: 5px;
   height: 400px;
+  width: 600px;
+  display: none;
+}
+
+.container-seven {
+  border: 2px solid white;
+  background-color: rgb(245, 245, 245, 0.7);
+  margin-top: 10px;
+  border-radius: 5px;
+  height: 450px;
   width: 600px;
   display: none;
 }
@@ -116,9 +129,10 @@ span {
 .start-button {
   margin: 45px;
   font-size: 12px;
-  background-color: gray;
+  background-color: rgb(230, 225, 225);
   padding: 16px;
   transition-duration: 0.4s;
+  border: rgb(50, 50, 92) 1px solid;
   border-radius: 3px;
 }
 
@@ -126,19 +140,13 @@ span {
   background-color: rgb(221, 82, 27);
 }
 
-.winner {
-  background-color: black;
-  background-image: url('https://media.giphy.com/media/SnzivCcjEj5mg/giphy.gif');
-  background-repeat: no-repeat;
-  /* justify-content: right; */
-  opacity: 0.5;
-}
-
 .win-screen {
+  margin: 10px 0 10px 0;
   color: black;
   font-size: 50px;
 }
 
+/* Img hosted by giphy */
 .cheat {
   position: absolute;
   background-image: url('https://media.giphy.com/media/5ftsmLIqktHQA/giphy.gif');
@@ -151,6 +159,23 @@ span {
 .reset {
   background-color: white;
   padding: 16px;
-  border: white 1px solid;
+  border: rgb(50, 50, 92) 1px solid;
   border-radius: 7px;
+  transition-duration: 0.4s;
+}
+
+.reset:hover {
+  background-color: rgb(221, 82, 27);
+}
+
+/* Media Queries from catswhocode.com */
+@media screen and (max-width: 400px) {
+  html {
+    width: 100%;
+  }
+  body {
+    width: 100%;
+    margin: 0;
+    border: none;
+  }
 }

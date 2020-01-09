@@ -1,4 +1,4 @@
-//SILVER//
+//SILVER-ish//
 
 //Psuedo Code//
 //click 'get started' initializes game
@@ -157,7 +157,7 @@ function questionFiveInit() {
   }
   //NEXT QUESTION BUTTON
   let nextButton = document.createElement('button');
-  nextButton.innerText = 'How did you do?';
+  nextButton.innerText = 'Next';
   document.querySelector('.container-six').appendChild(nextButton);
   nextButton.addEventListener('click', hide);
   nextButton.addEventListener('click', show);
