@@ -14,6 +14,7 @@
 const score = document.querySelector('.score');
 const getStarted = document.querySelector('.start-button');
 const resetButton = document.querySelector('.reset');
+//const correct = document.querySelectorAll('span.correct-span');
 
 //add event listener
 resetButton.addEventListener('click', resetGame);
@@ -33,26 +34,17 @@ function show() {
   show.style.display = 'block';
 }
 
-//callback logic for start game && question one//
+//callback logic for start game && QUESTION ONE//
 function questionOneInit() {
-  // let questionOne = document.createElement('p');
-  // questionOne.innerText = 'What actor plays Ian Malcom?';
-  // document.querySelector('.container-two').appendChild(questionOne);
-  //answers array or object//
-  // let answers = {
-  //   names: ['Jeff Goldblum', 'Nicholas Cage', 'Ryan Gosling', 'Brian Cranston'],
-  //   correct: 'Jeff Goldblum'
-  // };
-  //CREATE <P> TAGS WITH NAMES//
-  // for (let i = 0; i < 4; i++) {
-  //   let answerParagraph = document.createElement('p');
-  //   answerParagraph.setAttribute('class', 'correct');
-  //   answerParagraph.innerText = answers.names[i];
-  //   document.querySelector('.para').appendChild(answerParagraph);
-  // }
   //CORRECT ANSWER//
   let correctAnswer = document.getElementById('correct');
   correctAnswer.addEventListener('click', addPoint);
+  correctAnswer.addEventListener('click', revealCorrect);
+  //CORRECT ANSWER//
+  function revealCorrect() {
+    let correct = document.querySelector('.correct-span');
+    correct.style.display = 'block';
+  }
   //NEXT QUESTION BUTTON
   let nextButton = document.createElement('button');
   nextButton.innerText = 'Next Question';
@@ -69,28 +61,18 @@ function questionOneInit() {
     show.style.display = 'block';
   }
 }
+
 //QUESTION 2//
 function questionTwoInit() {
-  // let questionOne = document.createElement('p');
-  // questionOne.innerText = 'Who directed Jurassic Park?';
-  // document.querySelector('.container-three').appendChild(questionOne);
-  // //answers array//
-  // let answers = [
-  //   'Steven Spielberg',
-  //   'Martin Scorsese',
-  //   'George Lucas',
-  //   'James Cameron'
-  // ];
-  // //FOR LOOP TEST//
-  // for (let i = 0; i < 4; i++) {
-  //   let answerPara = document.createElement('p');
-  //   answerPara.setAttribute('class', 'yes');
-  //   answerPara.innerText = answers[i];
-  //   document.querySelector('.container-three').appendChild(answerPara);
-  // }
   //CORRECT ANSWER//
   let correctAnswer = document.getElementById('correct-two');
   correctAnswer.addEventListener('click', addPoint);
+  correctAnswer.addEventListener('click', revealCorrect);
+  //CORRECT ANSWER//
+  function revealCorrect() {
+    let correct = document.querySelector('.correct-span-two');
+    correct.style.display = 'block';
+  }
   //NEXT QUESTION BUTTON
   let nextButton = document.createElement('button');
   nextButton.innerText = 'Next Question';
@@ -110,21 +92,14 @@ function questionTwoInit() {
 
 //QUESTION 3//
 function questionThreeInit() {
-  // let questionOne = document.createElement('p');
-  // questionOne.innerText = 'What fictional island is Jurassic Park set on?';
-  // document.querySelector('.container-four').appendChild(questionOne);
-  // //answers array//
-  // let answers = ['Island Park', 'Isla Nubar', 'Costa Isla', 'Dino Island'];
-  // //FOR LOOP TEST//
-  // for (let i = 0; i < 4; i++) {
-  //   let answerPara = document.createElement('p');
-  //   answerPara.setAttribute('class', 'correct');
-  //   answerPara.innerText = answers[i];
-  //   document.querySelector('.container-four').appendChild(answerPara);
-  // }
   //CORRECT ANSWER//
   let correctAnswer = document.getElementById('correct-three');
   correctAnswer.addEventListener('click', addPoint);
+  correctAnswer.addEventListener('click', revealCorrect);
+  function revealCorrect() {
+    let correct = document.querySelector('.correct-span-three');
+    correct.style.display = 'block';
+  }
   //NEXT QUESTION BUTTON
   let nextButton = document.createElement('button');
   nextButton.innerText = 'Next Question';
@@ -144,21 +119,15 @@ function questionThreeInit() {
 
 //QUESTION 4//
 function questionFourInit() {
-  // let questionOne = document.createElement('p');
-  // questionOne.innerText = 'What stone contains "dino DNA"';
-  // document.querySelector('.container-five').appendChild(questionOne);
-  // //answers array//
-  // let answers = ['Quartz', 'Amber', 'Diamonds', 'Opal'];
-  // //FOR LOOP TEST//
-  // for (let i = 0; i < 4; i++) {
-  //   let answerPara = document.createElement('p');
-  //   answerPara.setAttribute('class', 'correct');
-  //   answerPara.innerText = answers[i];
-  //   document.querySelector('.container-five').appendChild(answerPara);
-  // }
   //CORRECT ANSWER//
   let correctAnswer = document.getElementById('correct-four');
   correctAnswer.addEventListener('click', addPoint);
+  correctAnswer.addEventListener('click', revealCorrect);
+  function revealCorrect() {
+    let correct = document.querySelector('.correct-span-four');
+    correct.style.display = 'block';
+  }
+
   //NEXT QUESTION BUTTON
   let nextButton = document.createElement('button');
   nextButton.innerText = 'Next Question';
@@ -178,21 +147,14 @@ function questionFourInit() {
 
 //QUESTION 5//
 function questionFiveInit() {
-  // let questionOne = document.createElement('p');
-  // questionOne.innerText = "What is the name of John Hammond's lawyer?";
-  // document.querySelector('.container-six').appendChild(questionOne);
-  // //answers array//
-  // let answers = ['Amos McFly', 'Kirk Geraldo', 'Mr. Howard', 'Donald Gennaro'];
-  // //FOR LOOP TEST//
-  // for (let i = 0; i < 4; i++) {
-  //   let answerPara = document.createElement('p');
-  //   answerPara.setAttribute('class', 'correct');
-  //   answerPara.innerText = answers[i];
-  //   document.querySelector('.container-six').appendChild(answerPara);
-  // }
   //CORRECT ANSWER//
   let correctAnswer = document.getElementById('correct-five');
   correctAnswer.addEventListener('click', addPoint);
+  correctAnswer.addEventListener('click', revealCorrect);
+  function revealCorrect() {
+    let correct = document.querySelector('.correct-span-five');
+    correct.style.display = 'block';
+  }
   //NEXT QUESTION BUTTON
   let nextButton = document.createElement('button');
   nextButton.innerText = 'How did you do?';
@@ -201,7 +163,7 @@ function questionFiveInit() {
   nextButton.addEventListener('click', show);
   nextButton.addEventListener('click', winScreenInit);
   //stop countdown//
-  nextButton.addEventListener('click', clearInterval(timerFunction));
+  nextButton.addEventListener('click', stopCountDown);
   function hide() {
     let hidden = document.querySelector('.container-six');
     hidden.style.display = 'none';
@@ -216,7 +178,7 @@ function questionFiveInit() {
 let timeLeft = 30;
 let timerFunction;
 function startInterval() {
-  let timerFunction = setInterval(function() {
+  timerFunction = setInterval(function() {
     document.querySelector('.time').innerHTML = timeLeft;
     timeLeft -= 1;
     if (timeLeft === -2) {
@@ -228,7 +190,10 @@ function startInterval() {
     }
   }, 1000);
 }
-
+//STOP CLOCK ON WIN SCREEN//
+function stopCountDown() {
+  clearInterval(timerFunction);
+}
 //ADD POINT FUNCTION//
 function addPoint() {
   let currentScore = parseInt(score.innerText);
