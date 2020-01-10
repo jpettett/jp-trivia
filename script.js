@@ -45,6 +45,7 @@ function questionOneInit() {
     let correct = document.querySelector('.correct-span');
     correct.style.display = 'block';
   }
+
   //NEXT QUESTION BUTTON
   let nextButton = document.createElement('button');
   nextButton.innerText = 'Next Question';
@@ -223,5 +224,14 @@ function addPoints() {
   score.innerText = newScore;
   if (score.innerText === '10') {
     document.body.classList.add('cheat');
+  }
+}
+
+//WRONG ANSWER ALERT//
+let wrongAnswer = document.getElementsByClassName('incorrect');
+for (let i = 0; i < wrongAnswer.length; i++) {
+  wrongAnswer[i].addEventListener('click', wrongAnswerAlert);
+  function wrongAnswerAlert() {
+    alert('Incorrect! Try again');
   }
 }
